@@ -87,7 +87,7 @@ var finances = [
     ['Feb-2017', 671099]
     ];
     
-console.log(finances.length);
+console.log("Total months:", finances.length);
 
 const totalFinances = [
     ['Jan-2010', 867884],
@@ -184,7 +184,7 @@ const totalFinances = [
         total += totalFinances.length;
     })
 
-    console.log("TOTAL: ", total);
+    console.log("Total months: ", total);
 
     const arr = [
       ['Jan-2010', 867884],
@@ -279,4 +279,3 @@ const totalFinances = [
 
       console.log("PROFIT : ", sum);    
 
-      
