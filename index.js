@@ -222,3 +222,15 @@ for (let i = 0; i < data.length - 1; i++) {
 }
 
 console.log("Greatest increase in profit:", greatestIncMo)
+
+// Calculate greatest decrease
+let greatestDec = [data[0][0], data[1][1] - data[0][1]];
+
+for(let i = 1; i < data.length-1; i++) {
+   let decrease = data[i+1][1] - data[i][1];
+   if(decrease < greatestDec[1]) {
+      greatestDec = [data[i+1][0], decrease];
+      }
+}
+
+console.log("Greatest decrease in profit:", greatestDec[0])
